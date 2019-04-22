@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AddGameComponent implements OnInit {
 
-  constructor(gameService : GameService,companyService : CompanyService,router: Router) { }
+  constructor(private gameService : GameService,private companyService : CompanyService, private router: Router) { }
   succes:boolean;
   errorMsg:string;
   deleted:boolean;
