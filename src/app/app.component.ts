@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  constructor(public userService : UserService,public router:Router){}
+  constructor(private userService : UserService,private router:Router){}
   title = 'GameDb';
   boolean:boolean;
 

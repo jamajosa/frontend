@@ -13,7 +13,7 @@ import { Game } from '../../services/models/game.model';
 export class UserProfileComponent {
    games: any =[];
    gamee:any;
-   constructor(public _gameService: GameService,public router: Router) {
+   constructor(private _gameService: GameService,private router: Router) {
    }
 
    ngOnInit() {
