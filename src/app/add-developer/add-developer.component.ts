@@ -10,7 +10,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AddDeveloperComponent implements OnInit {
 
-  constructor(private developerService : DeveloperService, private router: Router) { }
+  constructor(developerService : DeveloperService,  router: Router) { }
   succes:boolean;
   errorMsg:string;
   deleted:boolean;
