@@ -12,7 +12,7 @@ import { User } from '../../../services/models/user.model';
 
 
 export class SignUpComponent implements OnInit {
-  constructor(private userService : UserService, private router: Router) { }
+  constructor(public userService : UserService, public router: Router) { }
   succes:boolean;
   errorMsg:string;
   emaillist: any = [];

@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AddCompanyComponent implements OnInit {
 
-  constructor(private developerService : DeveloperService, private companyService : CompanyService, private router: Router) { }
+  constructor(public developerService : DeveloperService, public companyService : CompanyService, public router: Router) { }
   succes:boolean;
   errorMsg:string;
   comp:any;

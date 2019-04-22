@@ -9,7 +9,7 @@ import { UserService } from '../../../services/user.service';
 })
 export class SignInComponent implements OnInit {
 
-  constructor(private userService: UserService,private router:Router) { }
+  constructor(public userService: UserService,public router:Router) { }
   model = {
     email: '',
     password: ''
