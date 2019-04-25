@@ -12,6 +12,7 @@ import { Game } from '../../services/models/game.model';
 })
 export class UserProfileComponent {
    games: any =[];
+   d= 1;
    gamee:any;
    constructor(private _gameService: GameService,private router: Router) {
    }
