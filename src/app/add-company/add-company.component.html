@@ -54,7 +54,7 @@ Bedrijven die al in ons systeem staan:
 <th scope="col"> Edit</th>
 <th scope="col"> Details</th>
   </tr>
-  <tr *ngFor="let comp of companylist | paginate: { id: 2, itemsPerPage: 5, currentPage: p }">
+  <tr  *ngFor="let comp of companylist | paginate: { id: 2, itemsPerPage: 5, currentPage: p }">
     <td>{{comp.companyName}}</td>
     <td *ngIf="comp._id"><input type="button" class="submit" (click)="delete(comp._id)" value="VERWIJDER"></td>
     <td *ngIf="!comp._id">Niet mogelijk</td>

@@ -16,6 +16,7 @@ export class AddGameComponent implements OnInit {
   succes:boolean;
   errorMsg:string;
   deleted:boolean;
+  d=1;
   gamelist: any = [];
   complist: any = [];
   selectedGame: Game = {

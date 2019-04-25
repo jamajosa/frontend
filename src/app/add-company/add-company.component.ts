@@ -16,6 +16,8 @@ export class AddCompanyComponent implements OnInit {
   succes:boolean;
   errorMsg:string;
   comp:any;
+  p = 1;
+  d= 1;
   deleted:boolean;
   devList: any = [];
   companylist: any = [];

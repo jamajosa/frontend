@@ -14,6 +14,7 @@ export class AddDeveloperComponent implements OnInit {
   succes:boolean;
   errorMsg:string;
   deleted:boolean;
+  d =1;
   developerlist: any = [];
   selectedDeveloper: Developer = {
     name: '',
