@@ -15,7 +15,10 @@ export class AddDeveloperComponent implements OnInit {
   errorMsg:string;
   deleted:boolean;
   developerlist: any = [];
-
+  selectedDeveloper: Developer = {
+    name: '',
+    age: ''
+  };
   edit(dev: any,form: NgForm){
     if(form.value.name === "" || form.value.name === null ){
       form.value.name = dev.name
@@ -66,7 +69,7 @@ onSubmit(form : NgForm){
 }
 
 resetForm(form: NgForm) {
-  this.developerService.selectedDeveloper = {
+  this.selectedDeveloper = {
     name: '',
     age: ''
   };

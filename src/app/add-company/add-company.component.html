@@ -23,9 +23,9 @@
 <h3 style="text-align:center;">Company Panel</h3>
 <form #insertCompanyForm ="ngForm" (ngSubmit)="onSubmit(insertCompanyForm)" style="text-align: center;">
   <input type="text" class="input"  #companyName="ngModel"
-  [(ngModel)]="companyService.selectedCompany.companyName"
+  [(ngModel)]="selectedCompany.companyName"
   name="companyName" placeholder="Bedrijfsnaam" required>
-  <input type="number" class="input"  #age="ngModel" [(ngModel)]="companyService.selectedCompany.companyAge"
+  <input type="number" class="input"  #age="ngModel" [(ngModel)]="selectedCompany.companyAge"
   name="companyAge" placeholder="De leeftijd van het bedrijf" required ><br/><br/>
   Selecteer de developers die in dit bedrijf werken
   <table class="table table table-hover table-light" >

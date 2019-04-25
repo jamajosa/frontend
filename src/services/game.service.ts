@@ -11,12 +11,7 @@ import {environment} from '../environments/environment';
 })
 
 export class GameService {
-  selectedGame: Game = {
-    gameName: '',
-    gameDetails: '',
-    gameImage: '',
-    gameCompany: null
-  };
+  
   game: any;
   mainUrl: string = environment.apiBaseUrl;
 

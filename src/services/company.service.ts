@@ -10,11 +10,6 @@ import {environment} from '../environments/environment';
   providedIn: 'root'
 })
 export class CompanyService {
-  selectedCompany: Company = {
-    companyName: '',
-    companyAge: '',
-    companyDeveloper: []
-  };
   company: any;
   mainUrl: string = environment.apiBaseUrl;
 

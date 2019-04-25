@@ -10,11 +10,7 @@ import {environment} from '../environments/environment';
 })
 
 export class UserService{
-  selectedUser: User = {
-    fullName: '',
-    email: '',
-    password: ''
-  };
+  
   constructor(private http: HttpClient){}
 
 

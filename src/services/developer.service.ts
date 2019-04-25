@@ -10,10 +10,6 @@ import {environment} from '../environments/environment';
   providedIn: 'root'
 })
 export class DeveloperService {
-  selectedDeveloper: Developer = {
-    name: '',
-    age: ''
-  };
   developer: any;
   mainUrl: string = environment.apiBaseUrl;
 

@@ -18,7 +18,11 @@ export class SignUpComponent implements OnInit {
   emaillist: any = [];
   emailsame :boolean;
   usernamesame: boolean;
-
+  selectedUser: User = {
+    fullName: '',
+    email: '',
+    password: ''
+  };
   ngOnInit() {
     this.emaillist = [];
     this.userService.getUsers()
@@ -59,7 +63,7 @@ export class SignUpComponent implements OnInit {
 }
 
   resetForm(form: NgForm) {
-    this.userService.selectedUser = {
+    this.selectedUser = {
       fullName: '',
       email: '',
       password: ''

@@ -2,19 +2,19 @@
 <h3 style="text-align:center;">Game Panel</h3>
 <form #insertGameForm ="ngForm" (ngSubmit)="onSubmit(insertGameForm)" style="text-align: center;">
   <input type="text" class="input"  #gameName="ngModel"
-  [(ngModel)]="gameService.selectedGame.gameName"
+  [(ngModel)]="selectedGame.gameName"
   name="gameName" placeholder="Naam van het spel" required>
   <input type="text" class="input"  #gameImage="ngModel"
-  [(ngModel)]="gameService.selectedGame.gameImage"
+  [(ngModel)]="selectedGame.gameImage"
   name="gameImage" placeholder="Plaatje van het spel" required>
   <textarea type="text" class="input" rows="4" cols="50" #gameDetails="ngModel"
-  [(ngModel)]="gameService.selectedGame.gameDetails"
+  [(ngModel)]="selectedGame.gameDetails"
   name="gameDetails" placeholder="Details" required></textarea>
   De maker van de game:
   <select
   #gameCompany="ngModel"
   name="gameCompany"
-  [(ngModel)]="gameService.selectedGame.gameCompany"
+  [(ngModel)]="selectedGame.gameCompany"
   >
     <option *ngFor="let c of complist"
     class="input"
@@ -27,7 +27,7 @@ games die al in ons systeem staan:
 <table class="table table table-hover table-light" >
   <tr>
 <th scope="col">Image</th>
-<th scope="col"> Age</th>
+<th scope="col"> Name</th>
 <th scope="col"> Delete</th>
 <th scope="col"> Edit</th>
   </tr>

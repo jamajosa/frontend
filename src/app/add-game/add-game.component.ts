@@ -18,6 +18,12 @@ export class AddGameComponent implements OnInit {
   deleted:boolean;
   gamelist: any = [];
   complist: any = [];
+  selectedGame: Game = {
+    gameName: '',
+    gameDetails: '',
+    gameImage: '',
+    gameCompany: null
+  };
   edit(dev: any,form: NgForm){
     if(form.value.gameName === "" || form.value.gameName === null ){
       form.value.gameName = dev.gameName
@@ -78,7 +84,7 @@ onSubmit(form : NgForm){
 }
 
 resetForm(form: NgForm) {
-  this.gameService.selectedGame = {
+  this.selectedGame = {
     gameName: '',
     gameDetails: '',
     gameImage: '',

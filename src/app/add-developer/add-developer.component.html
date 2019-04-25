@@ -2,9 +2,9 @@
 <h3 style="text-align:center;">Developer Panel</h3>
 <form #insertDeveloperForm ="ngForm" (ngSubmit)="onSubmit(insertDeveloperForm)" style="text-align: center;">
   <input type="text" class="input"  #name="ngModel"
-  [(ngModel)]="developerService.selectedDeveloper.name"
+  [(ngModel)]="selectedDeveloper.name"
   name="name" placeholder="Naam"  required>
-  <input type="number" class="input"  #age="ngModel" [(ngModel)]="developerService.selectedDeveloper.age"
+  <input type="number" class="input"  #age="ngModel" [(ngModel)]="selectedDeveloper.age"
   name="age" placeholder="Leeftijd" required >
   <input  type="submit"style="width:150px;" class="submit" value="VOER IN">
 <br/>

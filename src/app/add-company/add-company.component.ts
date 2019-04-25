@@ -20,10 +20,16 @@ export class AddCompanyComponent implements OnInit {
   devList: any = [];
   companylist: any = [];
   developerlist: any = [];
+  selectedCompany: Company = {
+    companyName: '',
+    companyAge: '',
+    companyDeveloper: []
+  };
 
   rowclicked(a:any){
     this.comp = a;
   }
+
 
   edit(dev: any,form: NgForm){
     form.value.companyDeveloper = this.devList;
@@ -98,7 +104,7 @@ onSubmit(form : NgForm){
 }
 
 resetForm(form: NgForm) {
-  this.companyService.selectedCompany = {
+  this.selectedCompany = {
     companyName: '',
     companyAge: ''
   };
